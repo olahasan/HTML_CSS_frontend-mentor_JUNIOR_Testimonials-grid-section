@@ -1,0 +1,171 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+    /* background-color: hsl(0, 0%, 81%); */
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+.boxs {
+    margin: 100px 0;
+}
+
+.boxs .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.boxs .container .box {
+    /* background-color: antiquewhite; */
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.boxs .container .box .photo {
+    display: flex;
+    align-items: center;
+    /* color: black; */
+}
+
+.boxs .container .box .photo .image {}
+
+.boxs .container .box .photo .image img {
+    border-radius: 50%;
+}
+
+.boxs .container .box .photo .small-text {
+    margin-left: 10px;
+}
+
+.boxs .container .box .photo .small-text h2 {
+    margin: 0;
+}
+
+.boxs .container .box .photo .small-text span {}
+
+.boxs .container .box .text {}
+
+.boxs .container .box .text .big-text {}
+
+.boxs .container .box .text .big-text .bold {
+    /* color: black; */
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.boxs .container .box .text .big-text p {
+    /* color: black; */
+    /* font-size: 14.5px; */
+    margin-bottom: 0;
+}
+
+.boxs .container #one {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 3;
+    grid-row-end: 2;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+
+.boxs .container #two {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+
+}
+
+.boxs .container #three {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.boxs .container #four {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-column-end: 4;
+    grid-row-end: 3;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+
+.boxs .container #five {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-column-end: 5;
+    grid-row-end: 3;
+    /* color: white; */
+    background-color: hsl(0, 0%, 100%);
+
+}
+
+
+.boxs .container .box .big-text .one {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.boxs .container .box .big-text .two {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.boxs .container .box .big-text .three {
+    font-size: 18.5px;
+    color: #777;
+}
+
+.boxs .container .box .big-text .four {
+    color: whitesmoke;
+    font-size: 17px;
+}
+
+
+.boxs .container .box .big-text .five {
+    font-size: 17px;
+    color: #777;
+}
+
+@media(max-width:767px) {
+    .boxs .container .box {
+        margin-bottom: 20px;
+    }
+
+    .boxs .container {
+        display: block;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+        padding: 0 30px;
+    }
+
+    .boxs .container .box {
+        padding: 25px 35px;
+    }
+
+    .boxs .container .box .text .big-text .bold {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+}
